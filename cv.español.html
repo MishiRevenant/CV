@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - José Manuel Ferro Monteagudo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Contenedor principal tipo "Hoja" */
+        .cv-container {
+            display: flex;
+            flex-direction: row;
+            max-width: 950px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Columna Izquierda (Sidebar) */
+        .sidebar {
+            width: 35%;
+            background-color: #1a252f;
+            /* Azul noche formal */
+            color: #ecf0f1;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+            /* Cuadrado con bordes suaves */
+            border: 3px solid #3498db;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-section {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .sidebar-title {
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+
+        .contact-list,
+        .skills-list,
+        .edu-list {
+            list-style: none;
+            font-size: 0.9em;
+        }
+
+        .contact-list li,
+        .skills-list li,
+        .edu-list li {
+            margin-bottom: 12px;
+        }
+
+        .contact-list strong,
+        .skills-list strong {
+            color: #ecf0f1;
+            display: block;
+        }
+
+        .contact-list a {
+            color: #bdc3c7;
+            text-decoration: none;
+        }
+
+        .edu-item {
+            margin-bottom: 15px;
+        }
+
+        .edu-school {
+            font-size: 0.85em;
+            color: #bdc3c7;
+            font-style: italic;
+        }
+
+        /* Columna Derecha (Main Content) */
+        .main-content {
+            width: 65%;
+            padding: 50px 40px;
+            background-color: #ffffff;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            line-height: 1.1;
+            margin-bottom: 5px;
+        }
+
+        .header h2 {
+            font-size: 1.3em;
+            color: #3498db;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title span {
+            color: #3498db;
+            margin-right: 10px;
+        }
+
+        .profile-text {
+            text-align: justify;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        /* Experiencia y Proyectos */
+        .job {
+            margin-bottom: 25px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .job-date {
+            font-size: 0.85em;
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+
+        .project-title {
+            font-weight: bold;
+            color: #34495e;
+            margin-top: 10px;
+        }
+
+        .job-tasks {
+            padding-left: 20px;
+            margin-top: 5px;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .job-tasks li {
+            margin-bottom: 6px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .cv-container {
+                flex-direction: column;
+            }
+
+            .sidebar,
+            .main-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv-container">
+
+        <!-- COLUMNA IZQUIERDA -->
+        <aside class="sidebar">
+            <img src="924634.png" alt="José Manuel Ferro Monteagudo" class="profile-img">
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Contacto</h3>
+                <ul class="contact-list">
+                    <li><strong>Ubicación</strong>Cusco, Perú (Remoto)</li>
+                    <li><strong>Teléfono</strong>+51 974322881</li>
+                    <li><strong>Email</strong>jm5372533@gmail.com</li>
+                    <li><strong>LinkedIn</strong><a href="#">www.linkedin.com/in/josé-manuel-ferro-monteagudo</a></li>
+                    <li><strong>GitHub</strong><a href="#">github.com/MishiRevenant</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Educación</h3>
+                <ul class="edu-list">
+                    <li class="edu-item">
+                        <strong>Especialización en Desarrollo Fullstack</strong>
+                        <div class="edu-school">Universidad San Martín de Porres (En curso)</div>
+                    </li>
+                    <li class="edu-item">
+                        <strong>Certificado Fullstack: Desarrollador de Aplicaciones Web</strong>
+                        <div class="edu-school">Universidad Continental (En trámite)</div>
+                    </li>
+                    <li class="edu-item">
+                        <strong>Ingeniería de Sistemas e Informática</strong>
+                        <div class="edu-school">Univ. Continental (Actualmente 6to ciclo)</div>
+                    </li>
+                    <li class="edu-item">
+                        <strong>Múltiples certificaciones en tecnología</strong>
+                        <div class="edu-school">Platzi (Formación continua)</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Habilidades</h3>
+                <ul class="skills-list">
+                    <li><strong>Backend</strong> PHP, Laravel, Node.js (Nest.js), C# (Básico)</li>
+                    <li><strong>Arquitectura API</strong> Creación de Endpoints, RESTful, JSON</li>
+                    <li><strong>Base de Datos</strong> PostgreSQL, SQL, Supabase</li>
+                    <li><strong>Frontend</strong> Vue.js, JavaScript, TypeScript, Tailwind CSS</li>
+                    <li><strong>Herramientas</strong> Git, GitHub, Docker, Linux, Vercel</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- COLUMNA DERECHA -->
+        <main class="main-content">
+            <header class="header">
+                <h1>José Manuel <br> Ferro Monteagudo</h1>
+                <h2>Desarrollador Backend Laravel / Fullstack</h2>
+            </header>
+
+            <section class="section">
+                <h3 class="section-title"><span>●</span> Perfil Profesional</h3>
+                <p class="profile-text">
+                    Estudiante de Ingeniería de Sistemas especializado en el desarrollo Backend, con un sólido dominio
+                    de <strong>PHP</strong> y el framework Laravel. Destaco en el diseño, creación y consumo de
+                    <strong>APIs RESTful</strong> para conectar aplicaciones de manera eficiente y escalable. Más allá
+                    del código, soy un profesional altamente colaborativo que valora el <strong>trabajo en
+                        equipo</strong>, la comunicación asertiva y el buen clima laboral. Me entusiasma integrarme a
+                    entornos dinámicos donde pueda aportar soluciones técnicas estructuradas y, al mismo tiempo, sumar
+                    proactividad para alcanzar los objetivos del proyecto.
+                </p>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title"><span>●</span> Experiencia y Proyectos</h3>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Desarrollador Backend / Fullstack Independiente</div>
+                        <div class="job-date">Enero 2025 – Presente</div>
+                    </div>
+                    <p class="profile-text">Desarrollo y despliegue de soluciones de software desde la concepción hasta
+                        producción.</p>
+
+                    <!-- Proyecto PHP/Laravel: Foco en MVC, ORM y Seguridad -->
+                    <div class="project-title">E-commerce "Meily Ghost" (PHP & Laravel)</div>
+                    <ul class="job-tasks">
+                        <li>Desarrollo de aplicación monolítica utilizando <span class="highlight">PHP y el framework
+                                Laravel bajo el patrón MVC</span>, garantizando un código limpio y estructurado.</li>
+                        <li>Diseño de <span class="highlight">bases de datos relacionales en SQL</span>, implementando
+                            migraciones y modelos (Eloquent ORM) para gestionar entidades complejas.</li>
+                        <li>Implementación de sistemas de autenticación y roles de usuario, aplicando validaciones
+                            estrictas del lado del servidor para garantizar la seguridad.</li>
+                        <li>Integración fluida de la lógica de controladores con la interfaz de usuario mediante el
+                            motor de plantillas Blade.</li>
+                    </ul>
+
+                    <!-- Proyecto API RESTful y Desacoplado -->
+                    <div class="project-title">Aplicación de Transporte "TaxiGo"</div>
+                    <ul class="job-tasks">
+                        <li>Desarrollo de plataforma con <span class="highlight">arquitectura desacoplada</span>
+                            (Frontend y Backend en repositorios separados).</li>
+                        <li>Construcción, diseño y consumo de una <span class="highlight">API RESTful</span>,
+                            gestionando <em>endpoints</em> seguros para la transmisión de datos JSON.</li>
+                        <li>Despliegue exitoso en entornos de producción (Vercel), asegurando la calidad y funcionalidad
+                            de la aplicación.</li>
+                    </ul>
+
+                    <!-- Proyecto Munayni: Foco en Endpoints internos -->
+                    <div class="project-title">Plataforma Institucional "Munayni"</div>
+                    <ul class="job-tasks">
+                        <li>Construcción de la lógica de servidor y conexión con bases de datos en PostgreSQL.</li>
+                        <li>Diseño e implementación de <span class="highlight">múltiples endpoints RESTful
+                                internos</span> para gestionar la lógica de negocio (inscripciones a eventos, redención
+                            de recompensas, órdenes de cafetería).</li>
+                        <li>Refactorización y escritura de código limpio para optimizar el rendimiento y la comunicación
+                            cliente-servidor.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+
+</html>
